@@ -1,7 +1,7 @@
 # Instagram Unprotect
 Instagram unprotect is a Userscript to unprotect Instagram images. With Instagram Unprotect, you can right-click Instagram images to download or link them.
 
-A Userscript is a JavaScript mini-program you can run in your browser to manipulate the content of a web pae.
+A Userscript is a JavaScript mini-program you can run in your browser to manipulate the content of a web page.
 
 ## How to install
 Userscript need an extension to work in your browser:
