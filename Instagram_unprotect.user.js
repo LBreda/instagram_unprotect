@@ -4,6 +4,7 @@
 // @version      1.3
 // @description  Unprotects Instagram images in the single-image pages
 // @author       Lorenzo Breda
+// @license      MIT
 // @match        https://*.instagram.com/*
 // @grant        none
 // ==/UserScript==
