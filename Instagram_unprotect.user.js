@@ -1,18 +1,19 @@
 // ==UserScript==
 // @name         Instagram unprotect
 // @namespace    http://lbreda.com/
-// @version      2.0
+// @version      2.1
 // @description  Unprotects Instagram images in the single-image pages
 // @author       Lorenzo Breda
 // @license      MIT
 // @match        https://www.instagram.com/p/*
 // @grant        none
-// @run-at       document-end
 // ==/UserScript==
 
 function unprotectImage() {
-    let imgContainer = document.querySelector('img[src*=cdninstagram][srcset*=cdninstagram]')?.parentNode.parentNode;
-    if(imgContainer?.getElementsByTagName('div')[1]) imgContainer?.removeChild(imgContainer?.getElementsByTagName('div')[1]);
+    [...document.querySelectorAll('img[src*=cdninstagram][srcset*=cdninstagram]')].forEach((image) => {
+        let imgContainer = image?.parentNode.parentNode;
+        if(imgContainer?.getElementsByTagName('div')[1]) imgContainer?.removeChild(imgContainer?.getElementsByTagName('div')[1]);
+    })
 }
 
 function callback(mutationList, observer) {
