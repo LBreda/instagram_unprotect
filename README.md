@@ -13,4 +13,4 @@ Userscript need an extension to work in your browser:
 If you installed one of the extensions, you can install the script from [OpenUserJS](https://openuserjs.org/scripts/lbreda/Instagram_unprotect)
 
 ## How to use
-If you open a single-page image or the home page on Instagram (by right-clicking the post time on the timeline and opening in a new window) the image is automatically unlocked. You can right-click it and download or link it.
+This user script lets you download all images (except the thumbnails) by right-clicking the image and clicking "save as".
