@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version    2.4
+// @version    2.5
 // @name    Instagram unprotect
 // @license      MIT
 // @namespace    http://lbreda.com/
