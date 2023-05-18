@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram unprotect
 // @namespace    http://lbreda.com/
-// @version      2.5
+// @version      2.6
 // @description  Unprotects Instagram images in the single-image pages
 // @author       Lorenzo Breda
 // @license      MIT
@@ -62,7 +62,7 @@ function observeNewLi() {
     let waitForImage = setInterval(() => {
         if(document.querySelectorAll('._aagv img').length){
             clearInterval(waitForImage)
-            let ul = (document.querySelectorAll('._aagv img'))[0].closest('ul') || null;
+            let ul = [...document.querySelectorAll('._aagv img')].reduce((acc, curr) => curr.closest('ul'));
             if (ul) {
                 (new MutationObserver(unprotectImageOnEachLi).observe(ul, { attributes: false, childList: true, subtree: true }));
             }
